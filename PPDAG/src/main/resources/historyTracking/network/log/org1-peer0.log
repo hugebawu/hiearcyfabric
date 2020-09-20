@@ -1,0 +1,166 @@
+[34m2020-09-20 16:28:45.615 CST [nodeCmd] serve -> INFO 001[0m Starting peer:
+ Version: 1.4.0
+ Commit SHA: 3bcc170
+ Go version: go1.10
+ OS/Arch: linux/amd64
+ Chaincode:
+  Base Image Version: 0.4.14
+  Base Docker Namespace: hyperledger
+  Base Docker Label: org.hyperledger.fabric
+  Docker Namespace: hyperledger
+[34m2020-09-20 16:28:45.615 CST [ledgermgmt] initialize -> INFO 002[0m Initializing ledger mgmt
+[34m2020-09-20 16:28:45.615 CST [kvledger] NewProvider -> INFO 003[0m Initializing ledger provider
+[34m2020-09-20 16:28:45.628 CST [kvledger] NewProvider -> INFO 004[0m ledger provider Initialized
+[34m2020-09-20 16:28:45.634 CST [ledgermgmt] initialize -> INFO 005[0m ledger mgmt initialized
+[34m2020-09-20 16:28:45.634 CST [nodeCmd] serve -> INFO 006[0m Running in chaincode development mode
+[34m2020-09-20 16:28:45.634 CST [nodeCmd] serve -> INFO 007[0m Disable loading validity system chaincode
+[34m2020-09-20 16:28:45.635 CST [peer] func1 -> INFO 008[0m Auto-detected peer address: 121.195.10.101:7051
+[34m2020-09-20 16:28:45.635 CST [peer] func1 -> INFO 009[0m Host is 0.0.0.0 , falling back to auto-detected address: 121.195.10.101:7051
+[34m2020-09-20 16:28:45.639 CST [peer] func1 -> INFO 00a[0m Auto-detected peer address: 121.195.10.101:7051
+[34m2020-09-20 16:28:45.639 CST [peer] func1 -> INFO 00b[0m Host is 0.0.0.0 , falling back to auto-detected address: 121.195.10.101:7051
+[34m2020-09-20 16:28:45.640 CST [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Entering computeChaincodeEndpoint with peerHostname: 121.195.10.101
+[34m2020-09-20 16:28:45.640 CST [nodeCmd] computeChaincodeEndpoint -> INFO 00d[0m Exit with ccEndpoint: 127.0.0.1:7052
+[34m2020-09-20 16:28:45.641 CST [sccapi] registerSysCC -> INFO 00e[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[34m2020-09-20 16:28:45.641 CST [sccapi] registerSysCC -> INFO 00f[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[34m2020-09-20 16:28:45.641 CST [sccapi] registerSysCC -> INFO 010[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[34m2020-09-20 16:28:45.641 CST [sccapi] registerSysCC -> INFO 011[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[34m2020-09-20 16:28:45.642 CST [gossip.service] func1 -> INFO 012[0m Initialize gossip with endpoint 121.195.10.101:7051 and bootstrap set [127.0.0.1:7051]
+[34m2020-09-20 16:28:45.645 CST [gossip.gossip] NewGossipService -> INFO 013[0m Creating gossip service with self membership of Endpoint: , InternalEndpoint: 121.195.10.101:7051, PKI-ID: 05607c358b7db750de8352aeb51e2e05dea8847b65b7790d53731731013e5b33, Metadata: 
+[33m2020-09-20 16:28:45.646 CST [gossip.gossip] NewGossipService -> WARN 014[0m External endpoint is empty, peer will not be accessible outside of its organization
+[34m2020-09-20 16:28:45.646 CST [gossip.gossip] start -> INFO 015[0m Gossip instance 121.195.10.101:7051 started
+[34m2020-09-20 16:28:45.646 CST [sccapi] deploySysCC -> INFO 016[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[34m2020-09-20 16:28:45.646 CST [cscc] Init -> INFO 017[0m Init CSCC
+[34m2020-09-20 16:28:45.646 CST [sccapi] deploySysCC -> INFO 018[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[34m2020-09-20 16:28:45.646 CST [qscc] Init -> INFO 019[0m Init QSCC
+[34m2020-09-20 16:28:45.646 CST [sccapi] deploySysCC -> INFO 01a[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[34m2020-09-20 16:28:45.647 CST [sccapi] deploySysCC -> INFO 01b[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[34m2020-09-20 16:28:45.647 CST [nodeCmd] serve -> INFO 01c[0m Deployed system chaincodes
+[34m2020-09-20 16:28:45.647 CST [discovery] NewService -> INFO 01d[0m Created with config TLS: false, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[34m2020-09-20 16:28:45.647 CST [nodeCmd] registerDiscoveryService -> INFO 01e[0m Discovery service activated
+[34m2020-09-20 16:28:45.647 CST [nodeCmd] serve -> INFO 01f[0m Starting peer with ID=[name:"peer0.org1.example.com" ], network ID=[dev], address=[121.195.10.101:7051]
+[34m2020-09-20 16:28:45.647 CST [nodeCmd] serve -> INFO 020[0m Started peer with ID=[name:"peer0.org1.example.com" ], network ID=[dev], address=[121.195.10.101:7051]
+[34m2020-09-20 16:29:01.592 CST [endorser] callChaincode -> INFO 021[0m [][f33f731c] Entry chaincode: name:"cscc" 
+[34m2020-09-20 16:29:01.593 CST [ledgermgmt] CreateLedger -> INFO 022[0m Creating ledger [ch1] with genesis block
+[34m2020-09-20 16:29:01.594 CST [fsblkstorage] newBlockfileMgr -> INFO 023[0m Getting block information from block storage
+[34m2020-09-20 16:29:01.598 CST [kvledger] CommitWithPvtData -> INFO 024[0m [ch1] Committed block [0] with 1 transaction(s) in 3ms (state_validation=0ms block_commit=1ms state_commit=0ms)
+[34m2020-09-20 16:29:01.599 CST [ledgermgmt] CreateLedger -> INFO 025[0m Created ledger [ch1] with genesis block
+[34m2020-09-20 16:29:01.601 CST [gossip.gossip] JoinChan -> INFO 026[0m Joining gossip network of channel ch1 with 1 organizations
+[34m2020-09-20 16:29:01.601 CST [gossip.gossip] learnAnchorPeers -> INFO 027[0m No configured anchor peers of Org1MSP for channel ch1 to learn about
+[34m2020-09-20 16:29:01.605 CST [gossip.state] NewGossipStateProvider -> INFO 028[0m Updating metadata information, current ledger sequence is at = 0, next expected block is = 1
+[34m2020-09-20 16:29:01.605 CST [sccapi] deploySysCC -> INFO 029[0m system chaincode lscc/ch1(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[34m2020-09-20 16:29:01.605 CST [cscc] Init -> INFO 02a[0m Init CSCC
+[34m2020-09-20 16:29:01.605 CST [sccapi] deploySysCC -> INFO 02b[0m system chaincode cscc/ch1(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[34m2020-09-20 16:29:01.606 CST [qscc] Init -> INFO 02c[0m Init QSCC
+[34m2020-09-20 16:29:01.606 CST [sccapi] deploySysCC -> INFO 02d[0m system chaincode qscc/ch1(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[34m2020-09-20 16:29:01.606 CST [sccapi] deploySysCC -> INFO 02e[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[34m2020-09-20 16:29:01.606 CST [endorser] callChaincode -> INFO 02f[0m [][f33f731c] Exit chaincode: name:"cscc"  (13ms)
+[34m2020-09-20 16:29:01.606 CST [comm.grpc.server] 1 -> INFO 030[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:01.591+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45122", "grpc.code": "OK", "grpc.call_duration": "14.380828ms"}
+[34m2020-09-20 16:29:01.783 CST [endorser] callChaincode -> INFO 031[0m [][a3eb6205] Entry chaincode: name:"lscc" 
+[34m2020-09-20 16:29:01.812 CST [lscc] executeInstall -> INFO 032[0m Installed Chaincode [wizcc] Version [0] to peer
+[34m2020-09-20 16:29:01.812 CST [endorser] callChaincode -> INFO 033[0m [][a3eb6205] Exit chaincode: name:"lscc"  (28ms)
+[34m2020-09-20 16:29:01.812 CST [comm.grpc.server] 1 -> INFO 034[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:01.777+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45124", "grpc.code": "OK", "grpc.call_duration": "34.94999ms"}
+[34m2020-09-20 16:29:01.877 CST [endorser] callChaincode -> INFO 035[0m [ch1][40472091] Entry chaincode: name:"lscc" 
+[34m2020-09-20 16:29:01.956 CST [endorser] callChaincode -> INFO 036[0m [ch1][40472091] Exit chaincode: name:"lscc"  (79ms)
+[34m2020-09-20 16:29:01.956 CST [comm.grpc.server] 1 -> INFO 037[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:01.876+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45128", "grpc.code": "OK", "grpc.call_duration": "79.914595ms"}
+[34m2020-09-20 16:29:07.607 CST [gossip.election] beLeader -> INFO 038[0m 05607c358b7db750de8352aeb51e2e05dea8847b65b7790d53731731013e5b33 : Becoming a leader
+[34m2020-09-20 16:29:07.607 CST [gossip.service] func1 -> INFO 039[0m Elected as a leader, starting delivery service for channel ch1
+[34m2020-09-20 16:29:07.611 CST [gossip.privdata] StoreBlock -> INFO 03a[0m [ch1] Received block [1] from buffer
+[34m2020-09-20 16:29:07.612 CST [committer.txvalidator] Validate -> INFO 03b[0m [ch1] Validated block [1] in 1ms
+[34m2020-09-20 16:29:07.613 CST [cceventmgmt] HandleStateUpdates -> INFO 03c[0m Channel [ch1]: Handling deploy or update of chaincode [wizcc]
+[34m2020-09-20 16:29:07.686 CST [kvledger] CommitWithPvtData -> INFO 03d[0m [ch1] Committed block [1] with 1 transaction(s) in 73ms (state_validation=38ms block_commit=33ms state_commit=0ms)
+[34m2020-09-20 16:29:11.321 CST [endorser] callChaincode -> INFO 03e[0m [ch1][58bf216d] Entry chaincode: name:"cscc" 
+[34m2020-09-20 16:29:11.321 CST [endorser] callChaincode -> INFO 03f[0m [ch1][58bf216d] Exit chaincode: name:"cscc"  (0ms)
+[34m2020-09-20 16:29:11.321 CST [comm.grpc.server] 1 -> INFO 040[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:11.32+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45144", "grpc.code": "OK", "grpc.call_duration": "994.891µs"}
+[34m2020-09-20 16:29:11.491 CST [endorser] callChaincode -> INFO 041[0m [ch1][9a40c941] Entry chaincode: name:"wizcc" 
+[34m2020-09-20 16:29:11.518 CST [endorser] callChaincode -> INFO 042[0m [ch1][9a40c941] Exit chaincode: name:"wizcc"  (28ms)
+[34m2020-09-20 16:29:11.519 CST [comm.grpc.server] 1 -> INFO 043[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:11.486+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45144", "grpc.code": "OK", "grpc.call_duration": "32.622824ms"}
+[34m2020-09-20 16:29:13.613 CST [gossip.privdata] StoreBlock -> INFO 044[0m [ch1] Received block [2] from buffer
+[34m2020-09-20 16:29:13.614 CST [committer.txvalidator] Validate -> INFO 045[0m [ch1] Validated block [2] in 0ms
+[34m2020-09-20 16:29:13.618 CST [kvledger] CommitWithPvtData -> INFO 046[0m [ch1] Committed block [2] with 1 transaction(s) in 4ms (state_validation=0ms block_commit=2ms state_commit=0ms)
+[34m2020-09-20 16:29:13.629 CST [endorser] callChaincode -> INFO 047[0m [ch1][458e94b0] Entry chaincode: name:"wizcc" 
+[34m2020-09-20 16:29:13.636 CST [endorser] callChaincode -> INFO 048[0m [ch1][458e94b0] Exit chaincode: name:"wizcc"  (7ms)
+[34m2020-09-20 16:29:13.637 CST [comm.grpc.server] 1 -> INFO 049[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:13.628+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45144", "grpc.code": "OK", "grpc.call_duration": "8.308239ms"}
+[34m2020-09-20 16:29:13.646 CST [endorser] callChaincode -> INFO 04a[0m [ch1][37e43378] Entry chaincode: name:"wizcc" 
+[34m2020-09-20 16:29:13.654 CST [endorser] callChaincode -> INFO 04b[0m [ch1][37e43378] Exit chaincode: name:"wizcc"  (8ms)
+[34m2020-09-20 16:29:13.654 CST [comm.grpc.server] 1 -> INFO 04c[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:13.646+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45144", "grpc.code": "OK", "grpc.call_duration": "8.877814ms"}
+[34m2020-09-20 16:29:15.669 CST [gossip.privdata] StoreBlock -> INFO 04d[0m [ch1] Received block [3] from buffer
+[34m2020-09-20 16:29:15.671 CST [committer.txvalidator] Validate -> INFO 04e[0m [ch1] Validated block [3] in 1ms
+[34m2020-09-20 16:29:15.676 CST [kvledger] CommitWithPvtData -> INFO 04f[0m [ch1] Committed block [3] with 1 transaction(s) in 5ms (state_validation=0ms block_commit=3ms state_commit=0ms)
+[34m2020-09-20 16:29:15.684 CST [endorser] callChaincode -> INFO 050[0m [ch1][b898a54d] Entry chaincode: name:"wizcc" 
+[34m2020-09-20 16:29:15.722 CST [endorser] callChaincode -> INFO 051[0m [ch1][b898a54d] Exit chaincode: name:"wizcc"  (38ms)
+[34m2020-09-20 16:29:15.722 CST [comm.grpc.server] 1 -> INFO 052[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:15.683+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45144", "grpc.code": "OK", "grpc.call_duration": "38.833341ms"}
+[34m2020-09-20 16:29:16.065 CST [comm.grpc.server] 1 -> INFO 053[0m streaming call completed {"grpc.start_time": "2020-09-20T16:29:11.46+08:00", "grpc.service": "protos.Deliver", "grpc.method": "Deliver", "grpc.peer_address": "127.0.0.1:45146", "error": "context finished before block retrieved: context canceled", "grpc.code": "Unknown", "grpc.call_duration": "4.605304574s"}
+[34m2020-09-20 16:29:25.428 CST [endorser] callChaincode -> INFO 054[0m [ch1][34f023af] Entry chaincode: name:"cscc" 
+[34m2020-09-20 16:29:25.429 CST [endorser] callChaincode -> INFO 055[0m [ch1][34f023af] Exit chaincode: name:"cscc"  (0ms)
+[34m2020-09-20 16:29:25.429 CST [comm.grpc.server] 1 -> INFO 056[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:25.427+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45158", "grpc.code": "OK", "grpc.call_duration": "1.367967ms"}
+[34m2020-09-20 16:29:25.603 CST [endorser] callChaincode -> INFO 057[0m [ch1][c2ee3f76] Entry chaincode: name:"wizcc" 
+[34m2020-09-20 16:29:25.620 CST [endorser] callChaincode -> INFO 058[0m [ch1][c2ee3f76] Exit chaincode: name:"wizcc"  (17ms)
+[31m2020-09-20 16:29:25.621 CST [endorser] SimulateProposal -> ERRO 059[0m [ch1][c2ee3f76] failed to invoke chaincode name:"wizcc" , error: transaction returned with failure: asset 12345 already exists
+github.com/hyperledger/fabric/core/chaincode.processChaincodeExecutionResult
+	/opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/chaincode_support.go:265
+github.com/hyperledger/fabric/core/chaincode.(*ChaincodeSupport).Execute
+	/opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/chaincode_support.go:239
+github.com/hyperledger/fabric/core/endorser.(*SupportImpl).Execute
+	/opt/gopath/src/github.com/hyperledger/fabric/core/endorser/support.go:147
+github.com/hyperledger/fabric/core/endorser.(*Endorser).callChaincode
+	/opt/gopath/src/github.com/hyperledger/fabric/core/endorser/endorser.go:142
+github.com/hyperledger/fabric/core/endorser.(*Endorser).SimulateProposal
+	/opt/gopath/src/github.com/hyperledger/fabric/core/endorser/endorser.go:237
+github.com/hyperledger/fabric/core/endorser.(*Endorser).ProcessProposal
+	/opt/gopath/src/github.com/hyperledger/fabric/core/endorser/endorser.go:456
+github.com/hyperledger/fabric/core/handlers/auth/filter.(*expirationCheckFilter).ProcessProposal
+	/opt/gopath/src/github.com/hyperledger/fabric/core/handlers/auth/filter/expiration.go:61
+github.com/hyperledger/fabric/core/handlers/auth/filter.(*filter).ProcessProposal
+	/opt/gopath/src/github.com/hyperledger/fabric/core/handlers/auth/filter/filter.go:32
+github.com/hyperledger/fabric/protos/peer._Endorser_ProcessProposal_Handler.func1
+	/opt/gopath/src/github.com/hyperledger/fabric/protos/peer/peer.pb.go:169
+github.com/hyperledger/fabric/vendor/github.com/grpc-ecosystem/go-grpc-middleware.ChainUnaryServer.func1.1
+	/opt/gopath/src/github.com/hyperledger/fabric/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:31
+github.com/hyperledger/fabric/common/grpclogging.UnaryServerInterceptor.func1
+	/opt/gopath/src/github.com/hyperledger/fabric/common/grpclogging/server.go:91
+github.com/hyperledger/fabric/vendor/github.com/grpc-ecosystem/go-grpc-middleware.ChainUnaryServer.func1.1
+	/opt/gopath/src/github.com/hyperledger/fabric/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:34
+github.com/hyperledger/fabric/common/grpcmetrics.UnaryServerInterceptor.func1
+	/opt/gopath/src/github.com/hyperledger/fabric/common/grpcmetrics/interceptor.go:30
+github.com/hyperledger/fabric/vendor/github.com/grpc-ecosystem/go-grpc-middleware.ChainUnaryServer.func1
+	/opt/gopath/src/github.com/hyperledger/fabric/vendor/github.com/grpc-ecosystem/go-grpc-middleware/chain.go:39
+github.com/hyperledger/fabric/protos/peer._Endorser_ProcessProposal_Handler
+	/opt/gopath/src/github.com/hyperledger/fabric/protos/peer/peer.pb.go:171
+github.com/hyperledger/fabric/vendor/google.golang.org/grpc.(*Server).processUnaryRPC
+	/opt/gopath/src/github.com/hyperledger/fabric/vendor/google.golang.org/grpc/server.go:982
+github.com/hyperledger/fabric/vendor/google.golang.org/grpc.(*Server).handleStream
+	/opt/gopath/src/github.com/hyperledger/fabric/vendor/google.golang.org/grpc/server.go:1208
+github.com/hyperledger/fabric/vendor/google.golang.org/grpc.(*Server).serveStreams.func1.1
+	/opt/gopath/src/github.com/hyperledger/fabric/vendor/google.golang.org/grpc/server.go:686
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:2361
+[34m2020-09-20 16:29:25.621 CST [comm.grpc.server] 1 -> INFO 05a[0m unary call completed {"grpc.start_time": "2020-09-20T16:29:25.603+08:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:45158", "grpc.code": "OK", "grpc.call_duration": "18.174645ms"}
+[34m2020-09-20 16:29:25.976 CST [comm.grpc.server] 1 -> INFO 05b[0m streaming call completed {"grpc.start_time": "2020-09-20T16:29:25.575+08:00", "grpc.service": "protos.Deliver", "grpc.method": "Deliver", "grpc.peer_address": "127.0.0.1:45160", "error": "context finished before block retrieved: context canceled", "grpc.code": "Unknown", "grpc.call_duration": "401.310693ms"}
+[31m2020-09-20 16:29:46.661 CST [chaincode] ProcessStream -> ERRO 05c[0m handling chaincode support stream: rpc error: code = Canceled desc = context canceled
+receive failed
+github.com/hyperledger/fabric/core/chaincode.(*Handler).ProcessStream
+	/opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/handler.go:427
+github.com/hyperledger/fabric/core/chaincode.(*ChaincodeSupport).HandleChaincodeStream
+	/opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/chaincode_support.go:190
+github.com/hyperledger/fabric/core/chaincode.(*ChaincodeSupport).Register
+	/opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/chaincode_support.go:195
+github.com/hyperledger/fabric/protos/peer._ChaincodeSupport_Register_Handler
+	/opt/gopath/src/github.com/hyperledger/fabric/protos/peer/chaincode_shim.pb.go:1066
+github.com/hyperledger/fabric/vendor/google.golang.org/grpc.(*Server).processStreamingRPC
+	/opt/gopath/src/github.com/hyperledger/fabric/vendor/google.golang.org/grpc/server.go:1124
+github.com/hyperledger/fabric/vendor/google.golang.org/grpc.(*Server).handleStream
+	/opt/gopath/src/github.com/hyperledger/fabric/vendor/google.golang.org/grpc/server.go:1212
+github.com/hyperledger/fabric/vendor/google.golang.org/grpc.(*Server).serveStreams.func1.1
+	/opt/gopath/src/github.com/hyperledger/fabric/vendor/google.golang.org/grpc/server.go:686
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:2361
+[34m2020-09-20 16:33:52.040 CST [nodeCmd] handleSignals -> INFO 05d[0m Received signal: 2 (interrupt)
+[34m2020-09-20 16:33:52.041 CST [gossip.service] Stop -> INFO 05e[0m Stopping chain ch1
+[34m2020-09-20 16:33:52.041 CST [gossip.service] Stop -> INFO 05f[0m Stopping leader election for ch1
+[34m2020-09-20 16:33:52.042 CST [gossip.gossip] Stop -> INFO 060[0m Stopping gossip
+[34m2020-09-20 16:33:52.042 CST [gossip.discovery] Stop -> INFO 061[0m Stopping
+[34m2020-09-20 16:33:52.042 CST [gossip.discovery] Stop -> INFO 062[0m Stopped
+[33m2020-09-20 16:33:52.042 CST [deliveryClient] try -> WARN 063[0m Got error: rpc error: code = Canceled desc = context canceled , at 1 attempt. Retrying in 1s
+[33m2020-09-20 16:33:52.042 CST [blocksProvider] DeliverBlocks -> WARN 064[0m [ch1] Receive error: client is closing
+[34m2020-09-20 16:33:52.043 CST [gossip.comm] Stop -> INFO 065[0m Stopping
+[34m2020-09-20 16:33:52.043 CST [gossip.comm] Stop -> INFO 066[0m Stopped
