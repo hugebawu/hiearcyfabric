@@ -48,9 +48,10 @@ public class PPDAGApp {
   PrivateKey privKey = null;
   
   public void loadUser(String name,String mspId) throws Exception{
-    String networkPath = this.getClass().getClassLoader().getResource("fabric").getFile()+"/network"; // 定位resources文件夹下的文件路径
-    logger.debug(networkPath);
+    String networkPath = this.getClass().getClassLoader().getResource("").getFile()+"fabric/network"; // 定位resources文件夹下的文件路径
+    logger.info(networkPath);
     File keystore = Paths.get(networkPath, "crypto-config","/peerOrganizations/org1.example.com", String.format("/users/%s@%s/msp/keystore", "Admin", "org1.example.com")).toFile();
+    logger.info(keystore.getPath());
     File keyFile = findFileSk(keystore); // 查找keystore路径下的以_sk结尾的文件
     if(null == keyFile ){
       throw new Exception("no secret key found");
@@ -169,8 +170,8 @@ public class PPDAGApp {
     Collection<ProposalResponse> rspc = channel.sendTransactionProposal(req);
     TransactionEvent event = channel.sendTransaction(rspc).get();
 
-    logger.info(String.format("txid: %s\n", event.getTransactionID()));
-    logger.info(String.format("valid: %b\n", event.isValid()));
+    logger.info(String.format("txid: %s", event.getTransactionID()));
+    logger.info(String.format("valid: %b", event.isValid()));
   }
   
   public void start() throws Exception{

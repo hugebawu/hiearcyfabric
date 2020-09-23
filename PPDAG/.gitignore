@@ -15,4 +15,12 @@ src/main/resources/fabric/network/crypto-config/
 src/main/resources/fabric/network/data/
 src/main/resources/fabric/network/log/
 
+src/main/java/cn/edu/ncepu/dataAggregate/application/.gradle/
+src/main/java/cn/edu/ncepu/dataAggregate/application/build/
+src/main/java/cn/edu/ncepu/dataAggregate/chaincode/.gradle/
+src/main/java/cn/edu/ncepu/dataAggregate/chaincode/build/
+
+src/main/java/cn/edu/ncepu/dataAggregate/application/build.gradle
+src/main/java/cn/edu/ncepu/dataAggregate/chaincode/build.gradle
+
 
